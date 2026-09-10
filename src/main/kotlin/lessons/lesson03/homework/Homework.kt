@@ -109,7 +109,7 @@ val registrationNumber: String = "Регистрационный номер"
 lateinit var maxNoiseLevel: String
 
 // 32. Индикатор превышения уровня шума в помещениях (превышен или не превышен в данный момент) (публичная изменяемая переменная)
-var isNoiseLevelExceeded: Boolean
+var isNoiseLevelExceeded: Boolean  = true
 
 // 33. План взаимодействия с прессой (приватная изменяемая переменная с отложенной инициализацией)
 lateinit var pressPlan: String
@@ -123,7 +123,7 @@ val projectReports: String by lazy {
 private lateinit var permitsStatus: String
 
 // 36. Индикатор доступности специализированного оборудования в данный момент (например, специальному оборудованию) (приватная изменяемая переменная)
-private var isSpecialEquipmentAvailable: Boolean
+private var isSpecialEquipmentAvailable: Boolean = true
 
 // 37. Список партнеров мероприятия (публичная изменяемая переменная с отложенной инициализацией)
 lateinit var partners: String
@@ -154,7 +154,7 @@ lateinit var hackathonSchedule: String
 private lateinit var celebrityGuestName: String
 
 // 46. Максимальное количество людей, которое может вместить место проведения (публичная неизменяемая переменная)
-val venueCapacity: Int
+val venueCapacity: Int = 100
 
 // 47. Количество часов, отведенное каждой команде для работы над проектом (публичная неизменяемая переменная)
-val teamWorkHours: Int
+val teamWorkHours: Int = 1
