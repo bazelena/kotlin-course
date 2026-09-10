@@ -43,16 +43,16 @@ var hackathonStatus: String = "Текущее состояние хакатон�
 var sponsors: String = "Список спонсоров"
 
 // 10. Бюджет мероприятия (приватная неизменяемая переменная - её не должны увидеть участники мероприятия)
-private val totalBudget: Double = 0.00
+private val totalBudget: Int = 100
 
 // 11. Текущий уровень доступа к интернету (приватная изменяемая переменная с возможной инициализацией)
-private lateinit var internetAccess: String = "уровень доступа к интернету"
+private lateinit var internetAccess: String
 
 // 12. Информация о транспортировке оборудования, распределении ресурсов и координации между различными командами поддержки (приватная изменяемая переменная с возможной инициализацией)
-private lateinit var logistics: String = "Информация"
+private lateinit var logistics: String
 
 //13. Количество команд (публичная изменяемая переменная с возможной инициализацией)
-var teamsCount: String = "Количество команд"
+var teamsCount: Int = 0
 
 // 14. Перечень задач (приватная изменяемая переменная)
 private var tasksList: String = "Перечень задач"
@@ -82,7 +82,7 @@ val privacyPolicy: String = "Политика конфиденциальност
 private var privateFeedback: String = "отзывы"
 
 // 23. Текущая температура в помещении (публичная переменная неизвестная на момент написания, может быть изменена)
-lateinit var roomTemperature: String = "Текущая температура в помещении"
+lateinit var roomTemperature: String
 
 // 24. Данные мониторинга и анализ производительности сетевого оборудования и интернет-соединения для целей отладки своих приложений командами (приватная изменяемая переменная с отложенной инициализацией)
 private lateinit var networkDiagnostics: String
@@ -91,7 +91,7 @@ private lateinit var networkDiagnostics: String
 lateinit var bandwidthThrottle: String
 
 // 26. Уровень освещения (публичная изменяемая переменная с отложенной инициализацией)
-lateinit var lightLevel: String = "Уровень освещения"
+lateinit var lightLevel: String
 
 // 27. Лог событий мероприятия (приватная изменяемая переменная)
 private var eventLog: String = "Логи"
@@ -151,7 +151,7 @@ lateinit var participantMood: String
 lateinit var hackathonSchedule: String
 
 // 45. Имя знаменитого специального гостя, которое будет объявлено за день до мероприятия, но в момент инициализации неизвестно (публичная изменяемая переменная с отложенной инициализацией)
-private lateinit var celebrityGuestName: String
+lateinit var celebrityGuestName: String
 
 // 46. Максимальное количество людей, которое может вместить место проведения (публичная неизменяемая переменная)
 val venueCapacity: Int = 100
