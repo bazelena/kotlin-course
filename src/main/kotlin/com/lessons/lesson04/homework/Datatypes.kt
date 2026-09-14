@@ -1,10 +1,7 @@
 package com.lessons.lesson04.homework
 
 val v1: Short = 42
-
-// значение превышает максимально допустимое для Long
-// val v2: Long = 98765432123456789L
-
+val v2: Long = 98765432123456789L
 val v3: Float = 23.45f
 val v4: Double = 0.123456789
 val v5: String = "Kotlin & Java"
