@@ -1,5 +1,7 @@
 package com.lessons.lesson05.homeworks
 
+fun main() {
+
 /*
 Задача 1
 Контекст: Вы изучаете физическое явление затухания звука в помещении.
@@ -12,13 +14,11 @@ package com.lessons.lesson05.homeworks
 использовать стандартное значение 0.5.
  */
 
-//fun main() {
-//    // example 1
-//    val baseIntensity: Double = 3.0
-//    val coefficient: Double? = 0.73 // но может быть null
-//    val baseCoefficient = 0.5
-//    val resultIntensity = baseIntensity * (coefficient ?: baseCoefficient)
-//    }
+    val baseIntensity: Double = 3.0
+    val coefficient: Double? = 0.73 // но может быть null
+    val baseCoefficient = 0.5
+    val resultIntensity = baseIntensity * (coefficient ?: baseCoefficient)
+
 
 /*
 Задача 2
@@ -29,16 +29,15 @@ package com.lessons.lesson05.homeworks
 Задача: Рассчитать полную стоимость доставки.
  */
 
-//fun main() {
-//    // example 2
-//    val defaultCost: Double = 50.0 //дефолтная доставка
-//    val cost: Double? = 20.0 // но может быть null // доставка
-//    val deliveryCost = 5.0
-//    val insuranceCoefficient = 0.005 // страховка
-//    // стоимость страховки
-//    val insuranceCost = (cost ?: defaultCost) * insuranceCoefficient
-//    val totalCost: Double = deliveryCost + insuranceCost
-//}
+
+    val defaultCost: Double = 50.0 //дефолтная доставка
+    val cost: Double? = 20.0 // но может быть null // стоимость клиента
+    val deliveryCost = 5.0
+    val insuranceCoefficient = 0.005 // страховка
+    // стоимость страховки
+    val insuranceCost = (cost ?: defaultCost) * insuranceCoefficient
+    val totalCost: Double = deliveryCost + insuranceCost
+
 
 /*
 Задача 3
@@ -49,8 +48,6 @@ package com.lessons.lesson05.homeworks
 Задача - сообщить об ошибке в случае отсутствия показаний атмосферного давления.
  */
 
-fun main() {
-    // example 3
     val pressure: String? = "34.6" // но может быть null
     val attentionMessage = "Attention, pressure is lost"
     val pressureForLab = pressure ?: attentionMessage
