@@ -108,7 +108,7 @@ fun selectingClothes(temperature: Int) {
 fun сhoosingMovie(age: Int) {
     val category = when (age) {
         in 0..9 -> "детские"
-        in 10..18 -> "подростковые"
+        in 10..17 -> "подростковые"
         else -> "18+"
     }
     println(category)
